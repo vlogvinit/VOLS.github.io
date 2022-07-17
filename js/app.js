@@ -645,6 +645,22 @@
                 }
             }));
         }
+        function menuDonateInit() {
+            if (document.querySelectorAll("._donate")) document.addEventListener("click", (function(e) {
+                if (e.target.closest("._donate")) menuDonateOpen();
+                if (e.target.closest("._donate-close")) menuDonateClose();
+            }));
+        }
+        function menuDonateOpen() {
+            bodyLock();
+            document.documentElement.classList.remove("menu-open");
+            document.documentElement.classList.add("menu-pay-open");
+        }
+        function menuDonateClose() {
+            bodyUnlock();
+            document.documentElement.classList.remove("menu-open");
+            document.documentElement.classList.remove("menu-pay-open");
+        }
         function menuClose() {
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
@@ -6113,6 +6129,15 @@
                 clearInterval(intGif);
             }
         }), 1e3);
+        const intGif2 = setInterval((() => {
+            const gif = document.getElementById("secondGif");
+            const firstGifReplace = document.getElementById("secondGifReplace");
+            if (gif.complete) {
+                gif.classList.add("active");
+                firstGifReplace.classList.remove("active");
+                clearInterval(intGif2);
+            }
+        }), 1e3);
         function digitsCountersInit(digitsCountersItems) {
             let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
             if (digitsCounters.length) digitsCounters.forEach((digitsCounter => {
@@ -6151,6 +6176,7 @@
         window["FLS"] = false;
         isWebp();
         menuInit();
+        menuDonateInit();
         pageNavigation();
         headerScroll();
     })();
