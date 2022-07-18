@@ -5896,24 +5896,6 @@
                 };
             }, {} ]
         }, {}, [ 1 ]);
-        const intGif = setInterval((() => {
-            const gif = document.getElementById("firstGif");
-            const firstGifReplace = document.getElementById("firstGifReplace");
-            if (gif.complete) {
-                gif.classList.add("active");
-                firstGifReplace.classList.remove("active");
-                clearInterval(intGif);
-            }
-        }), 1e3);
-        const intGif2 = setInterval((() => {
-            const gif = document.getElementById("secondGif");
-            const firstGifReplace = document.getElementById("secondGifReplace");
-            if (gif.complete) {
-                gif.classList.add("active");
-                firstGifReplace.classList.remove("active");
-                clearInterval(intGif2);
-            }
-        }), 1e3);
         function digitsCountersInit(digitsCountersItems) {
             let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
             if (digitsCounters.length) digitsCounters.forEach((digitsCounter => {
