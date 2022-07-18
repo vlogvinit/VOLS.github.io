@@ -5942,8 +5942,9 @@
         function clickHandler(e) {
             const target = e.target;
             if (target.dataset && target.dataset.copyId) {
+                debugger;
                 const text = document.getElementById(target.dataset.copyId).innerText;
-                navigator.clipboard.writeText(text);
+                Clipboard.writeText(text);
             }
         }
         document.addEventListener("click", clickHandler);
