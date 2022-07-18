@@ -670,66 +670,6 @@
                 if (window.FLS) console.log(message);
             }), 0);
         }
-        function uniqArray(array) {
-            return array.filter((function(item, index, self) {
-                return self.indexOf(item) === index;
-            }));
-        }
-        class MousePRLX {
-            constructor(props, data = null) {
-                let defaultConfig = {
-                    init: true,
-                    logging: true
-                };
-                this.config = Object.assign(defaultConfig, props);
-                if (this.config.init) {
-                    const paralaxMouse = document.querySelectorAll("[data-prlx-mouse]");
-                    if (paralaxMouse.length) {
-                        this.paralaxMouseInit(paralaxMouse);
-                        this.setLogging(`Проснулся, слежу за объектами: (${paralaxMouse.length})`);
-                    } else this.setLogging("Нет ни одного объекта. Сплю...zzZZZzZZz...");
-                }
-            }
-            paralaxMouseInit(paralaxMouse) {
-                paralaxMouse.forEach((el => {
-                    const paralaxMouseWrapper = el.closest("[data-prlx-mouse-wrapper]");
-                    const paramСoefficientX = el.dataset.prlxCx ? +el.dataset.prlxCx : 100;
-                    const paramСoefficientY = el.dataset.prlxCy ? +el.dataset.prlxCy : 100;
-                    const directionX = el.hasAttribute("data-prlx-dxr") ? -1 : 1;
-                    const directionY = el.hasAttribute("data-prlx-dyr") ? -1 : 1;
-                    const paramAnimation = el.dataset.prlxA ? +el.dataset.prlxA : 50;
-                    let positionX = 0, positionY = 0;
-                    let coordXprocent = 0, coordYprocent = 0;
-                    setMouseParallaxStyle();
-                    if (paralaxMouseWrapper) mouseMoveParalax(paralaxMouseWrapper); else mouseMoveParalax();
-                    function setMouseParallaxStyle() {
-                        const distX = coordXprocent - positionX;
-                        const distY = coordYprocent - positionY;
-                        positionX += distX * paramAnimation / 1e3;
-                        positionY += distY * paramAnimation / 1e3;
-                        el.style.cssText = `transform: translate3D(${directionX * positionX / (paramСoefficientX / 10)}%,${directionY * positionY / (paramСoefficientY / 10)}%,0);`;
-                        requestAnimationFrame(setMouseParallaxStyle);
-                    }
-                    function mouseMoveParalax(wrapper = window) {
-                        wrapper.addEventListener("mousemove", (function(e) {
-                            const offsetTop = el.getBoundingClientRect().top + window.scrollY;
-                            if (offsetTop >= window.scrollY || offsetTop + el.offsetHeight >= window.scrollY) {
-                                const parallaxWidth = window.innerWidth;
-                                const parallaxHeight = window.innerHeight;
-                                const coordX = e.clientX - parallaxWidth / 2;
-                                const coordY = e.clientY - parallaxHeight / 2;
-                                coordXprocent = coordX / parallaxWidth * 100;
-                                coordYprocent = coordY / parallaxHeight * 100;
-                            }
-                        }));
-                    }
-                }));
-            }
-            setLogging(message) {
-                this.config.logging ? functions_FLS(`[PRLX Mouse]: ${message}`) : null;
-            }
-        }
-        modules_flsModules.mousePrlx = new MousePRLX({});
         var smooth_scroll_polyfills_min = __webpack_require__(2);
         let gotoblock_gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
             const targetBlockElement = document.querySelector(targetBlock);
@@ -4650,19 +4590,19 @@
                 loop: false,
                 breakpoints: {
                     320: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1,
                         spaceBetween: 10
                     },
                     768: {
-                        slidesPerView: 2.5,
+                        slidesPerView: 2,
                         spaceBetween: 40
                     },
                     992: {
-                        slidesPerView: 3.5,
+                        slidesPerView: 3,
                         spaceBetween: 40
                     },
                     1421: {
-                        slidesPerView: 4.5,
+                        slidesPerView: 4,
                         spaceBetween: 40
                     }
                 },
@@ -4696,100 +4636,6 @@
             class_loaded: "_lazy-loaded",
             use_native: true
         });
-        class ScrollWatcher {
-            constructor(props) {
-                let defaultConfig = {
-                    logging: true
-                };
-                this.config = Object.assign(defaultConfig, props);
-                this.observer;
-                !document.documentElement.classList.contains("watcher") ? this.scrollWatcherRun() : null;
-            }
-            scrollWatcherUpdate() {
-                this.scrollWatcherRun();
-            }
-            scrollWatcherRun() {
-                document.documentElement.classList.add("watcher");
-                this.scrollWatcherConstructor(document.querySelectorAll("[data-watch]"));
-            }
-            scrollWatcherConstructor(items) {
-                if (items.length) {
-                    this.scrollWatcherLogging(`Проснулся, слежу за объектами (${items.length})...`);
-                    let uniqParams = uniqArray(Array.from(items).map((function(item) {
-                        return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : "0px"}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0}`;
-                    })));
-                    uniqParams.forEach((uniqParam => {
-                        let uniqParamArray = uniqParam.split("|");
-                        let paramsWatch = {
-                            root: uniqParamArray[0],
-                            margin: uniqParamArray[1],
-                            threshold: uniqParamArray[2]
-                        };
-                        let groupItems = Array.from(items).filter((function(item) {
-                            let watchRoot = item.dataset.watchRoot ? item.dataset.watchRoot : null;
-                            let watchMargin = item.dataset.watchMargin ? item.dataset.watchMargin : "0px";
-                            let watchThreshold = item.dataset.watchThreshold ? item.dataset.watchThreshold : 0;
-                            if (String(watchRoot) === paramsWatch.root && String(watchMargin) === paramsWatch.margin && String(watchThreshold) === paramsWatch.threshold) return item;
-                        }));
-                        let configWatcher = this.getScrollWatcherConfig(paramsWatch);
-                        this.scrollWatcherInit(groupItems, configWatcher);
-                    }));
-                } else this.scrollWatcherLogging("Сплю, нет объектов для слежения. ZzzZZzz");
-            }
-            getScrollWatcherConfig(paramsWatch) {
-                let configWatcher = {};
-                if (document.querySelector(paramsWatch.root)) configWatcher.root = document.querySelector(paramsWatch.root); else if ("null" !== paramsWatch.root) this.scrollWatcherLogging(`Эмм... родительского объекта ${paramsWatch.root} нет на странице`);
-                configWatcher.rootMargin = paramsWatch.margin;
-                if (paramsWatch.margin.indexOf("px") < 0 && paramsWatch.margin.indexOf("%") < 0) {
-                    this.scrollWatcherLogging(`Ой ой, настройку data-watch-margin нужно задавать в PX или %`);
-                    return;
-                }
-                if ("prx" === paramsWatch.threshold) {
-                    paramsWatch.threshold = [];
-                    for (let i = 0; i <= 1; i += .005) paramsWatch.threshold.push(i);
-                } else paramsWatch.threshold = paramsWatch.threshold.split(",");
-                configWatcher.threshold = paramsWatch.threshold;
-                return configWatcher;
-            }
-            scrollWatcherCreate(configWatcher) {
-                this.observer = new IntersectionObserver(((entries, observer) => {
-                    entries.forEach((entry => {
-                        this.scrollWatcherCallback(entry, observer);
-                    }));
-                }), configWatcher);
-            }
-            scrollWatcherInit(items, configWatcher) {
-                this.scrollWatcherCreate(configWatcher);
-                items.forEach((item => this.observer.observe(item)));
-            }
-            scrollWatcherIntersecting(entry, targetElement) {
-                if (entry.isIntersecting) {
-                    !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я вижу ${targetElement.classList}, добавил класс _watcher-view`);
-                } else {
-                    targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я не вижу ${targetElement.classList}, убрал класс _watcher-view`);
-                }
-            }
-            scrollWatcherOff(targetElement, observer) {
-                observer.unobserve(targetElement);
-                this.scrollWatcherLogging(`Я перестал следить за ${targetElement.classList}`);
-            }
-            scrollWatcherLogging(message) {
-                this.config.logging ? functions_FLS(`[Наблюдатель]: ${message}`) : null;
-            }
-            scrollWatcherCallback(entry, observer) {
-                const targetElement = entry.target;
-                this.scrollWatcherIntersecting(entry, targetElement);
-                targetElement.hasAttribute("data-watch-once") && entry.isIntersecting ? this.scrollWatcherOff(targetElement, observer) : null;
-                document.dispatchEvent(new CustomEvent("watcherCallback", {
-                    detail: {
-                        entry
-                    }
-                }));
-            }
-        }
-        modules_flsModules.watcher = new ScrollWatcher({});
         class FullPage {
             constructor(element, options) {
                 let config = {
@@ -5218,76 +5064,6 @@
                 }));
             }
         }), 0);
-        class parallax_Parallax {
-            constructor(elements) {
-                if (elements.length) this.elements = Array.from(elements).map((el => new parallax_Parallax.Each(el, this.options)));
-            }
-            destroyEvents() {
-                this.elements.forEach((el => {
-                    el.destroyEvents();
-                }));
-            }
-            setEvents() {
-                this.elements.forEach((el => {
-                    el.setEvents();
-                }));
-            }
-        }
-        parallax_Parallax.Each = class {
-            constructor(parent) {
-                this.parent = parent;
-                this.elements = this.parent.querySelectorAll("[data-prlx]");
-                this.animation = this.animationFrame.bind(this);
-                this.offset = 0;
-                this.value = 0;
-                this.smooth = parent.dataset.smooth ? Number(parent.dataset.smooth) : 15;
-                this.setEvents();
-            }
-            setEvents() {
-                this.animationID = window.requestAnimationFrame(this.animation);
-            }
-            destroyEvents() {
-                window.cancelAnimationFrame(this.animationID);
-            }
-            animationFrame() {
-                const topToWindow = this.parent.getBoundingClientRect().top;
-                const heightParent = this.parent.offsetHeight;
-                const heightWindow = window.innerHeight;
-                const positionParent = {
-                    top: topToWindow - heightWindow,
-                    bottom: topToWindow + heightParent
-                };
-                const centerPoint = this.parent.dataset.center ? this.parent.dataset.center : "center";
-                if (positionParent.top < 30 && positionParent.bottom > -30) switch (centerPoint) {
-                  case "top":
-                    this.offset = -1 * topToWindow;
-                    break;
-
-                  case "center":
-                    this.offset = heightWindow / 2 - (topToWindow + heightParent / 2);
-                    break;
-
-                  case "bottom":
-                    this.offset = heightWindow - (topToWindow + heightParent);
-                    break;
-                }
-                this.value += (this.offset - this.value) / this.smooth;
-                this.animationID = window.requestAnimationFrame(this.animation);
-                this.elements.forEach((el => {
-                    const parameters = {
-                        axis: el.dataset.axis ? el.dataset.axis : "v",
-                        direction: el.dataset.direction ? el.dataset.direction + "1" : "-1",
-                        coefficient: el.dataset.coefficient ? Number(el.dataset.coefficient) : 5,
-                        additionalProperties: el.dataset.properties ? el.dataset.properties : ""
-                    };
-                    this.parameters(el, parameters);
-                }));
-            }
-            parameters(el, parameters) {
-                if ("v" == parameters.axis) el.style.transform = `translate3D(0, ${(parameters.direction * (this.value / parameters.coefficient)).toFixed(2)}px,0) ${parameters.additionalProperties}`; else if ("h" == parameters.axis) el.style.transform = `translate3D(${(parameters.direction * (this.value / parameters.coefficient)).toFixed(2)}px,0,0) ${parameters.additionalProperties}`;
-            }
-        };
-        if (document.querySelectorAll("[data-prlx-parent]")) modules_flsModules.parallax = new parallax_Parallax(document.querySelectorAll("[data-prlx-parent]"));
         function DynamicAdapt(type) {
             this.type = type;
         }
@@ -6149,17 +5925,25 @@
             const duration = parseInt(digitsCounter.dataset.digitsCounter) ? parseInt(digitsCounter.dataset.digitsCounter) : 1e3;
             const startValue = parseInt(digitsCounter.innerHTML);
             const startPosition = 0;
+            const need = Number(document.getElementById("need").dataset.value);
             const step = timestamp => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                digitsCounter.innerHTML = Math.floor(progress * (startPosition + startValue));
-                if (progress < 1) window.requestAnimationFrame(step);
+                const currentValue = Math.floor(progress * (startPosition + startValue));
+                digitsCounter.innerHTML = currentValue;
+                if (progress < 1) {
+                    if ("collectedValue" === digitsCounter.id) bar.set(100 * currentValue / need, false);
+                    window.requestAnimationFrame(step);
+                }
             };
             window.requestAnimationFrame(step);
         }
         let options = {
             threshold: .3
         };
+        var bar = new ldBar(".myBar", {
+            value: 0
+        });
         let observer = new IntersectionObserver(((entries, observer) => {
             entries.forEach((entry => {
                 if (entry.isIntersecting) {
@@ -6173,6 +5957,14 @@
         if (sections.length) sections.forEach((section => {
             observer.observe(section);
         }));
+        function clickHandler(e) {
+            const target = e.target;
+            if (target.dataset && target.dataset.copyId) {
+                const text = document.getElementById(target.dataset.copyId).innerText;
+                navigator.clipboard.writeText(text);
+            }
+        }
+        document.addEventListener("click", clickHandler);
         window["FLS"] = false;
         isWebp();
         menuInit();

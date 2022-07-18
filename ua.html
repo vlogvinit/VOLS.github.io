@@ -6,10 +6,20 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220718020503">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220718122019">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Головна | VOLS">
+	<meta property="og:image" content="https://static.wixstatic.com/media/1a5faf_fee45d3043c24407abec9eec3aaab233%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1a5faf_fee45d3043c24407abec9eec3aaab233%7Emv2.jpg">
+	<meta property="og:image:width" content="2500">
+	<meta property="og:image:height" content="1330">
+	<meta property="og:url" content="https://www.vols.com.ua">
+	<meta property="og:site_name" content="VOLS">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Головна | VOLS">
+	<meta name="twitter:image" content="https://static.wixstatic.com/media/1a5faf_fee45d3043c24407abec9eec3aaab233%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1a5faf_fee45d3043c24407abec9eec3aaab233%7Emv2.jpg">
 </head>
 
 <body>
@@ -33,8 +43,8 @@
 								<li class="menu__item"><a href="#" data-goto-top="130" data-goto=".founder" class="menu__link">Founder</a></li>
 								<li class="menu__item"><a href="#" data-goto-top="130" data-goto=".mentions" class="menu__link">Mentions</a></li>
 								<li class="menu__item"><a href="#" data-goto-top="130" data-goto=".footer" class="menu__link">Contact Us</a></li>
-								<li class="menu__item"><a href="/ua" class="menu__link">
-										<div class="fflag fflag-UA ff-sm ff-wave" title="Ukraine UA"></div> <span>UA</span>
+								<li class="menu__item"><a href="" class="menu__link">
+										<div class="fflag fflag-GB ff-md ff-wave" title="GB"></div> <span>EN</span>
 									</a></li>
 							</ul>
 						</nav>
@@ -58,7 +68,8 @@
 					<div class="first-screen__bottom-gradient"></div>
 					<div class="first-screen__info">
 						<p>Do your part in the fight, help with military transport for the Armed Forces of Ukraine</p>
-						<ul>
+						<button type="button" class="first-screen__button button _donate">Donate Now</button>
+						<ul class="first-screen__list" data-da=".second-screen__mobile-desc,767.98">
 							<li>
 								<span>Injector 1.6</span>
 								<span>Engine</span>
@@ -87,6 +98,7 @@
 					</div>
 				</div>
 				<div class="second-screen __container">
+					<div class="second-screen__mobile-desc"></div>
 					<h2 class="second-screen__title">The perfect vehicle for the military</h2>
 					<p class="second-screen__description">A buggy with the ability to accommodate machine guns, grenade
 						launchers and ammunition delivery. There is also a separate section for transporting wounded
@@ -282,23 +294,23 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer __container" data-watch="navigator">
+		<footer class="footer __container">
 			<div class="footer__top">
 				<h2>To help informationally, contacts or details to the buggy - write here:</h2>
 				<ul class="footer__counters">
 					<li class="footer__counter">
-						<span class="footer__counter-value" id="collected" data-value="2100">
-							<div class="ldBar" data-value="58" data-preset="circle"></div>
-							<span>$<span data-digits-counter>2100</span></span>
+						<span class="footer__counter-value" id="collected">
+							<div class="ldBar myBar" id="ldBar" data-preset="circle"></div>
+							<span>$<span data-digits-counter id="collectedValue" data-value="2500">2500</span></span>
 						</span>
 						<span class="footer__counter-description">Collected</span>
 					</li>
 					<li class="footer__counter">
-						<span class="footer__counter-value" id="need" data-value="5000">$<span data-digits-counter>5000</span></span>
+						<span class="footer__counter-value">$<span data-digits-counter id="need" data-value="5000">5000</span></span>
 						<span class="footer__counter-description">Need</span>
 					</li>
 					<li class="footer__counter">
-						<span class="footer__counter-value" id="transferred"><span data-digits-counter>500</span></span>
+						<span class="footer__counter-value"><span data-digits-counter id="transferred">500</span></span>
 						<span class="footer__counter-description">Already transferred</span>
 					</li>
 				</ul>
@@ -340,15 +352,15 @@
 				<div class="donate__crypto-values">
 					<div class="donate__crypto-value">
 						<div class="donate__description">Bitcoin wallet</div>
-						<div class="donate__value"><span>bc1q8wx68f0v54s5whafyfcrc5hv6ad544v7csp03r</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+						<div class="donate__value"><span id="bitcoin">bc1q8wx68f0v54s5whafyfcrc5hv6ad544v7csp03r</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="bitcoin" src="img/copy.png" alt=""></picture></div>
 					</div>
 					<div class="donate__crypto-value">
 						<div class="donate__description">ETH</div>
-						<div class="donate__value"><span>0xfc0b52E020223c98a546F814cdA6d7872D74b386</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+						<div class="donate__value"><span id="ETH">0xfc0b52E020223c98a546F814cdA6d7872D74b386</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="ETH" src="img/copy.png" alt=""></picture></div>
 					</div>
 					<div class="donate__crypto-value">
 						<div class="donate__description">USDT (TRC20)</div>
-						<div class="donate__value"><span>TXWij58sQniqy2jtF8QE5xSX2zLQ5YMhUa</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+						<div class="donate__value"><span id="USDT">TXWij58sQniqy2jtF8QE5xSX2zLQ5YMhUa</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="USDT" src="img/copy.png" alt=""></picture></div>
 					</div>
 				</div>
 			</div>
@@ -366,7 +378,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="USD">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="USD" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -380,7 +392,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="EUR">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="EUR" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -394,7 +406,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="PZ">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="PZ" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -408,7 +420,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="CZK">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="CZK" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -422,7 +434,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="GBD">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="GBD" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -436,7 +448,7 @@
 							</div>
 							<div class="donate__swift-data-item">
 								<div class="donate__description">IBAN</div>
-								<div class="donate__value"><span>UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img src="img/copy.png" alt=""></picture></div>
+								<div class="donate__value"><span id="CHF">UA873052990000026009016707067</span> <picture><source srcset="img/copy.webp" type="image/webp"><img data-copy-id="CHF" src="img/copy.png" alt=""></picture></div>
 							</div>
 						</div>
 					</div>
@@ -475,7 +487,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220718020503"></script>
+	<script src="js/app.min.js?_v=20220718122019"></script>
+	<script src="js/consts.js?_v=20220718122019"></script>
+
 </body>
 
 </html>
