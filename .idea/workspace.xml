@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdc135c9-f786-49fe-b109-8d3e47c93c4f" name="Changes" comment="211113">
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/fonts/ProximaNova-RegularIt.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/fonts/ProximaNova-RegularIt.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/fonts/Shnobel-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/fonts/Shnobel-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/catArrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/fon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/fonFormMd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/fonFormSm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/fonFormXl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/formQuestion.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_backgroundBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/form_header.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/hamburger.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/header_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock1bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock1bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock1icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock2bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock2bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock2icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock3bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock3bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock3icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock3text.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock3text.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock4bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock4bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeBlock4icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeImg1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeImg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeImg2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/homeImg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/mask.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/result/course_title_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/result/exam_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/result/result_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/result/title_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/answer_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/answer_bg_active.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/header_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/header_bg_sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/test_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/test/test_bg_sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/images/ww_test_og.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/main.215016a9a082d46730e0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VOLS.github.io/main.215016a9a082d46730e0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +49,7 @@
       <updated>1658138866674</updated>
       <workItem from="1658138868248" duration="2787000" />
       <workItem from="1676326219261" duration="66000" />
-      <workItem from="1676326297982" duration="1863000" />
+      <workItem from="1676326297982" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="Test2">
       <created>1658139011409</created>
@@ -167,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676328249831</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="211113">
+      <created>1676328457856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676328457856</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
