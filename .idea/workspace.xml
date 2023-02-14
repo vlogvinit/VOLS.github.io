@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa2208b8-1671-4511-862c-7b42b9a35567" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fonFormMd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fonFormSm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/form_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/form_header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/form_header.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock1bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock1bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock2bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock2bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock3bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock3bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock4bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/homeBlock4bgBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result/course_title_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result/exam_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result/result_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result/title_border.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/answer_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/answer_bg_active.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/header_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/header_bg_sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/test_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/test/test_bg_sm.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.215016a9a082d46730e0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.215016a9a082d46730e0.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +35,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676387437425</updated>
-      <workItem from="1676387438629" duration="172000" />
+      <workItem from="1676387438629" duration="851000" />
     </task>
+    <task id="LOCAL-00001" summary="asdasd">
+      <created>1676387653720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676387653720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdasd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
   </component>
 </project>
