@@ -35,7 +35,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676387437425</updated>
-      <workItem from="1676387438629" duration="851000" />
+      <workItem from="1676387438629" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="asdasd">
       <created>1676387653720</created>
@@ -44,7 +44,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676387653720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="asdasda2">
+      <created>1676391577947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676391577947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="asdasda22">
+      <created>1676391745282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676391745282</updated>
+    </task>
+    <task id="LOCAL-00004" summary="asdasda22">
+      <created>1676391843500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676391843500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,6 +84,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asdasd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
+    <MESSAGE value="asdasda2" />
+    <MESSAGE value="asdasda22" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdasda22" />
   </component>
 </project>
