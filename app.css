@@ -3312,14 +3312,14 @@ body {
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url("fonts/ProximaNova-RegularIt.woff") format("woff"), url("fonts/ProximaNova-RegularIt.woff2") format("woff2");
+    src: url("./fonts/ProximaNova-RegularIt.woff") format("woff"), url("./fonts/ProximaNova-RegularIt.woff2") format("woff2");
     font-weight: normal;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Shnobel';
-    src: url("fonts/Shnobel-Regular.woff") format("woff"), url("fonts/Shnobel-Regular.woff2") format("woff2");
+    src: url("./fonts/Shnobel-Regular.woff") format("woff"), url("./fonts/Shnobel-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal
 }
@@ -3331,7 +3331,7 @@ html {
 }
 
 body {
-    background-image: url("images/fon.svg");
+    background-image: url("./VOLS.github.io/images/fon.svg");
     background-position: center;
     background-repeat: repeat;
     overflow-x: hidden
@@ -3357,8 +3357,8 @@ p {
     z-index: 1;
     position: relative;
     max-width: 1440px;
-    padding-right: 1rem;
-    padding-left: 1rem
+    padding-right: 20px;
+    padding-left: 20px
 }
 
 .section-base {
@@ -3422,13 +3422,13 @@ body.overflow, html.overflow {
     clear: both
 }
 
-.flex, .flex-v-center, .flex-v-h-center, .btn, .form-base .form-base-header, .form-base .form-base-body, .form-success, .test_page_content .quick-test-question-box, .test_page_content .quick-test-question-box .quick-test-item, .result_lvl_content_bot_links, .flex-column-v-center, #page-start .main-content .cards_card, .result_lvl_content_level, .flex-v-center-j-b, .footer_info, .footer_bottom, .btn.btn-1, .header-contact, .header-content, header nav ul, header nav ul li a, .header-nav nav, .input-group_checkbox, .input-group_checkbox input + label, .start-test_form_inputs, .footer_contact-info, .footer_links, .footer_links_item, .result_lvl_content_level .level, .flex-h-center, .test_page_content #progress-bar, .flex-column, .header-contact-phone, .input-group, .cat-gif_mark div, .cat-gif_title_text, .flex-j-b, .header-nav, #page-start .main-content, #page-start .main-content .left-block_images, .header-content-links, .test_page_content #progress-bar span {
+.flex, .flex-v-center, .flex-v-h-center, .btn, .form-base .form-base-header, .form-base .form-base-body, .form-success, .test_page_content .quick-test-question-box, .test_page_content .quick-test-question-box .quick-test-item, .result_lvl_content_bot_links, .flex-column-v-center, .start-test_form_content_inputs, #page-start .main-content .cards_card_content, .result_lvl_content_level, .flex-v-center-j-b, .footer_info, .footer_bottom, .btn.btn-1, .header-contact, .header-content, header nav ul, header nav ul li a, .header-nav nav, .input-group_checkbox, .input-group_checkbox input + label, .footer_contact-info, .footer_links, .footer_links_item, .result_lvl_content_level .level, .flex-h-center, .test_page_content #progress-bar, .flex-column, .header-contact-phone, .input-group, .cat-gif_mark div, .cat-gif_title_text, .flex-j-b, .header-nav, #page-start .main-content, #page-start .main-content .left-block_images, .header-content-links, .test_page_content #progress-bar span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.flex-v-center, .flex-v-h-center, .btn, .form-base .form-base-header, .form-base .form-base-body, .form-success, .test_page_content .quick-test-question-box, .test_page_content .quick-test-question-box .quick-test-item, .result_lvl_content_bot_links, .flex-column-v-center, #page-start .main-content .cards_card, .result_lvl_content_level, .flex-v-center-j-b, .footer_info, .footer_bottom, .btn.btn-1, .header-contact, .header-content, header nav ul, header nav ul li a, .header-nav nav, .input-group_checkbox, .input-group_checkbox input + label, .start-test_form_inputs, .footer_contact-info, .footer_links, .footer_links_item, .result_lvl_content_level .level {
+.flex-v-center, .flex-v-h-center, .btn, .form-base .form-base-header, .form-base .form-base-body, .form-success, .test_page_content .quick-test-question-box, .test_page_content .quick-test-question-box .quick-test-item, .result_lvl_content_bot_links, .flex-column-v-center, .start-test_form_content_inputs, #page-start .main-content .cards_card_content, .result_lvl_content_level, .flex-v-center-j-b, .footer_info, .footer_bottom, .btn.btn-1, .header-contact, .header-content, header nav ul, header nav ul li a, .header-nav nav, .input-group_checkbox, .input-group_checkbox input + label, .footer_contact-info, .footer_links, .footer_links_item, .result_lvl_content_level .level {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
@@ -3446,7 +3446,7 @@ body.overflow, html.overflow {
     justify-content: center
 }
 
-.flex-column, .flex-column-v-center, #page-start .main-content .cards_card, .result_lvl_content_level, .header-contact-phone, .input-group, .form-success, .cat-gif_mark div, .cat-gif_title_text {
+.flex-column, .flex-column-v-center, .start-test_form_content_inputs, #page-start .main-content .cards_card_content, .result_lvl_content_level, .header-contact-phone, .input-group, .form-success, .cat-gif_mark div, .cat-gif_title_text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4000,6 +4000,10 @@ header .hamburger {
     .second-title {
         padding-top: 30px
     }
+
+    header {
+        padding: 17px 20px
+    }
 }
 
 @media only screen and (min-width: 0) and (max-width: 991px) {
@@ -4313,9 +4317,8 @@ header .hamburger {
     content: '';
     display: block;
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 0;
-    bottom: 3px;
     width: 18px;
     height: 18px;
     border-radius: 18px;
@@ -4324,7 +4327,7 @@ header .hamburger {
 }
 
 .contactUs-container {
-    margin: 0 20px;
+    margin: 0 10px;
     width: 100%
 }
 
@@ -4332,18 +4335,19 @@ header .hamburger {
     width: 100%;
     max-width: 1148px;
     margin: 0 auto;
-    background-image: url("images/fonFormXl.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
+    border: 20px solid black;
+    -o-border-image: url("./VOLS.github.io/images/fonFormXl.svg") 23;
+    border-image: url("./VOLS.github.io/images/fonFormXl.svg") 23;
+    border-image-repeat: stretch stretch;
     position: relative
 }
 
 .contactUs_form {
-    padding: 60px;
+    padding: 20px 35px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    background: #fff
 }
 
 .contactUs_form_inputs {
@@ -4371,13 +4375,13 @@ header .hamburger {
 .contactUs_question {
     display: block;
     position: absolute;
-    left: 197px;
-    top: -133px
+    left: 174px;
+    top: -170px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1062px) {
-    .contactUs {
-        background-image: url("images/fonFormMd.svg")
+    .contactUs_form {
+        padding: 40px 60px
     }
 
     .contactUs_form_inputs .input-group {
@@ -4417,18 +4421,14 @@ header .hamburger {
     }
 
     .contactUs_question {
-        top: -125px;
+        top: -150px;
         left: 84px
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 991px) {
-    .contactUs {
-        background-image: url("images/fonFormSm.svg")
-    }
-
     .contactUs_form {
-        padding: 65px 50px
+        padding: 37px
     }
 
     .contactUs_form_inputs {
@@ -4475,8 +4475,8 @@ header .hamburger {
     .contactUs_question {
         display: block;
         position: absolute;
-        left: 95px;
-        top: -113px
+        left: 58px;
+        top: -142px
     }
 }
 
@@ -4492,22 +4492,25 @@ header .hamburger {
 }
 
 .start-test_title {
-    background-image: url("images/form_header.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    border: 25px solid black;
+    -o-border-image: url("./VOLS.github.io/images/form_header.svg") 30;
+    border-image: url("./VOLS.github.io/images/form_header.svg") 30;
+    border-image-repeat: stretch stretch;
     text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 140%;
     display: block;
     position: absolute;
     left: 8rem;
-    top: -10px
+    top: -10px;
+    -webkit-transform: rotate(-1.87deg);
+    transform: rotate(-1.87deg)
 }
 
 .start-test_title .text {
+    background: #fff;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 32px;
@@ -4515,10 +4518,8 @@ header .hamburger {
     text-align: center;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    -webkit-transform: rotate(-1.87deg);
-    transform: rotate(-1.87deg);
     color: #0D1C2E;
-    padding: 40px 40px
+    padding: 7px 16px
 }
 
 .start-test_title .text span {
@@ -4531,54 +4532,63 @@ header .hamburger {
 }
 
 .start-test_form {
-    background-image: url("images/form_background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    padding: 120px 80px;
+    border: 15px solid black;
+    -o-border-image: url("./VOLS.github.io/images/form_background.svg") 18;
+    border-image: url("./VOLS.github.io/images/form_background.svg") 18;
+    border-image-repeat: stretch stretch;
     width: 609px;
     height: 100%
 }
 
-.start-test_form_inputs .input-group {
+.start-test_form_content {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 110px 69px 0px 69px
+}
+
+.start-test_form_content_inputs .input-group {
     margin-top: 16px;
-    margin-right: 0
-}
-
-.start-test_form_inputs .input-group:first-child {
-    margin-top: 0
-}
-
-.start-test_form_inputs .input-group input {
+    margin-right: 0;
     width: 100%
 }
 
-.start-test_form .btn-box {
+.start-test_form_content_inputs .input-group:first-child {
+    margin-top: 0
+}
+
+.start-test_form_content_inputs .input-group input {
+    width: 100%
+}
+
+.start-test_form_content .btn-box {
     margin-top: 32px
 }
 
-.start-test_form .btn-box button {
+.start-test_form_content .btn-box button {
     z-index: 5;
     width: 100%
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1439px) {
     .start-test {
-        padding-top: 130px
+        padding-top: 138px
     }
 
     .start-test_title {
-        top: 40px;
+        top: 61px;
         left: 6rem
     }
 
     .start-test_form {
-        background-image: url("images/form_backgroundBig.png");
-        width: 100%;
-        padding: 110px 85px 70px 85px
+        width: 100%
     }
 
-    .start-test_form_inputs {
+    .start-test_form_content {
+        padding: 105px 75px 60px 75px
+    }
+
+    .start-test_form_content_inputs {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -4591,7 +4601,7 @@ header .hamburger {
         align-items: center
     }
 
-    .start-test_form_inputs .input-group {
+    .start-test_form_content_inputs .input-group {
         margin-top: 0;
         -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -4599,15 +4609,15 @@ header .hamburger {
         margin-right: 16px
     }
 
-    .start-test_form_inputs .input-group:last-child {
+    .start-test_form_content_inputs .input-group:last-child {
         margin-right: 0
     }
 
-    .start-test .btn-box {
+    .start-test_form_content .btn-box {
         margin-top: 24px
     }
 
-    .start-test .btn-box button {
+    .start-test_form_content .btn-box button {
         width: 100%;
         max-width: 451px;
         margin: 0 auto
@@ -4617,7 +4627,7 @@ header .hamburger {
 @media only screen and (min-width: 0) and (max-width: 991px) {
     .start-test {
         padding-top: 200px;
-        margin-top: 76px
+        margin-top: 100px
     }
 
     .start-test_title {
@@ -4627,11 +4637,13 @@ header .hamburger {
     }
 
     .start-test_title .text {
-        padding: 40px 8px
+        padding: 0;
+        margin-left: -15px;
+        margin-right: -15px
     }
 
-    .start-test_form {
-        padding: 120px 54px 47px 54px
+    .start-test_form_content {
+        padding: 110px 69px 47px 69px
     }
 }
 
@@ -5097,6 +5109,7 @@ header .hamburger {
     position: absolute;
     left: 60px;
     top: 50px;
+    padding-right: 35px;
     font-family: "Shnobel", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -5154,8 +5167,8 @@ header .hamburger {
     top: 64px;
     width: 90%;
     height: 67%;
-    -webkit-mask-image: url("images/mask.svg");
-    mask-image: url("images/mask.svg");
+    -webkit-mask-image: url("./VOLS.github.io/images/mask.svg");
+    mask-image: url("./VOLS.github.io/images/mask.svg");
     -webkit-mask-position: 0% 0%;
     mask-position: 0% 0%;
     -webkit-mask-size: 100% 100%;
@@ -5221,30 +5234,34 @@ header .hamburger {
 }
 
 #page-start .main-content .cards_card {
-    position: relative;
     width: calc(50% - 8px);
     margin-bottom: 16px;
-    padding: 34px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center
+    border: 11px solid black
 }
 
 #page-start .main-content .cards_card:nth-child(1) {
-    background-image: url("images/homeBlock1bg.png")
+    -o-border-image: url("./VOLS.github.io/images/homeBlock1bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/homeBlock1bg.svg") 13;
+    border-image-repeat: stretch stretch
 }
 
 #page-start .main-content .cards_card:nth-child(2) {
-    background-image: url("images/homeBlock2bg.png")
+    -o-border-image: url("./VOLS.github.io/images/homeBlock2bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/homeBlock2bg.svg") 13;
+    border-image-repeat: stretch stretch
 }
 
 #page-start .main-content .cards_card:nth-child(3) {
-    background-image: url("images/homeBlock3bg.png");
+    -o-border-image: url("./VOLS.github.io/images/homeBlock3bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/homeBlock3bg.svg") 13;
+    border-image-repeat: stretch stretch;
     margin-bottom: 0
 }
 
 #page-start .main-content .cards_card:nth-child(4) {
-    background-image: url("images/homeBlock4bg.png");
+    -o-border-image: url("./VOLS.github.io/images/homeBlock4bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/homeBlock4bg.svg") 13;
+    border-image-repeat: stretch stretch;
     margin-bottom: 0
 }
 
@@ -5252,25 +5269,31 @@ header .hamburger {
     margin-right: 16px
 }
 
-#page-start .main-content .cards_card img {
+#page-start .main-content .cards_card_content {
+    padding: 23px;
+    position: relative;
+    background: #fff
+}
+
+#page-start .main-content .cards_card_content img {
     margin-bottom: 19px;
     height: 69px
 }
 
-#page-start .main-content .cards_card .decorative-text {
+#page-start .main-content .cards_card_content .decorative-text {
     width: 275px;
     height: 42px;
     position: absolute;
-    bottom: -20px
+    bottom: -30px
 }
 
-#page-start .main-content .cards_card .decorative-text img {
+#page-start .main-content .cards_card_content .decorative-text img {
     width: 275px;
     height: 42px;
     margin-bottom: 0
 }
 
-#page-start .main-content .cards_card .decorative-text span {
+#page-start .main-content .cards_card_content .decorative-text span {
     width: 100%;
     position: absolute;
     font-family: "Shnobel", sans-serif;
@@ -5282,7 +5305,7 @@ header .hamburger {
     color: #FFFFFF
 }
 
-#page-start .main-content .cards_card p {
+#page-start .main-content .cards_card_content p {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 140%;
@@ -5291,12 +5314,12 @@ header .hamburger {
     color: #202426
 }
 
-#page-start .main-content .cards_card_arrow {
+#page-start .main-content .cards_card_content_arrow {
     display: none
 }
 
 #page-start .contact-form-container {
-    margin-top: 115px
+    margin-top: 170px
 }
 
 .test_page .contactUs-container {
@@ -5317,27 +5340,39 @@ header .hamburger {
     width: 100%;
     max-width: 1148px;
     margin: 89px auto 0 auto;
-    background-image: url("images/test/test_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 10px;
+    border: 11px solid black;
+    -o-border-image: url("./VOLS.github.io/images/test_bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/test_bg.svg") 13;
+    border-image-repeat: stretch stretch;
     position: relative
 }
 
-.test_page_content_header {
-    background-image: url("images/test/header_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 783px;
-    padding: 25px 58px;
-    position: absolute;
-    top: -71px;
-    left: calc(50% - 386px)
+.test_page_content_box {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0 58px 65px 58px
 }
 
-.test_page_content_header h1 {
+.test_page_content_header {
+    border: 22px solid black;
+    -o-border-image: url("./VOLS.github.io/images/header_test_bg.svg") 27;
+    border-image: url("./VOLS.github.io/images/header_test_bg.svg") 27;
+    border-image-repeat: stretch stretch;
+    max-width: 806px;
+    position: absolute;
+    top: -71px;
+    left: calc(50% - 403px);
+    -webkit-transform: rotate(-1.35deg);
+    transform: rotate(-1.35deg)
+}
+
+.test_page_content_header_box {
+    padding: 6px 49px;
+    background: white
+}
+
+.test_page_content_header_box h1 {
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 32px;
@@ -5345,25 +5380,22 @@ header .hamburger {
     text-align: center;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    color: #0D1C2E;
-    -webkit-transform: rotate(-1.35deg);
-    transform: rotate(-1.35deg)
+    color: #0D1C2E
 }
 
-.test_page_content_header h1 span {
+.test_page_content_header_box h1 span {
     color: #EC860F
 }
 
-.test_page_content_header .decorative-text {
+.test_page_content_header_box .decorative-text {
     position: absolute;
     left: calc(50% - 140px);
-    bottom: -25px;
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg)
+    bottom: -52px
 }
 
 .test_page_content #progress-bar {
-    margin-top: 135px;
+    padding-top: 145px;
+    margin-bottom: 58px;
     position: relative
 }
 
@@ -5385,7 +5417,7 @@ header .hamburger {
 }
 
 .test_page_content #progress-bar span.active::before {
-    content: url("../../images/icons.svg#icon-cros");
+    content: url("../../VOLS.github.io/images/icons.svg#icon-cros");
     display: block;
     position: absolute;
     left: -2px;
@@ -5397,17 +5429,17 @@ header .hamburger {
 }
 
 .test_page_content .quick-test-content {
-    margin: 55px auto;
+    margin: 0 auto;
     max-width: 670px
 }
 
-.test_page_content .quick-test-content .btn {
-    margin: 0 15px
+.test_page_content .quick-test-content .btn-box:first-child .btn {
+    margin-right: 20px
 }
 
 .test_page_content .quick-test-content .--subtitle {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 24px;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -5453,16 +5485,20 @@ header .hamburger {
 .test_page_content .quick-test-question-box .quick-test-item {
     border: 11px solid black;
     position: relative;
-    -o-border-image: url("images/test/answer_bg.svg") 13;
-    border-image: url("images/test/answer_bg.svg") 13;
+    -o-border-image: url("./VOLS.github.io/images/answer_bg.svg") 13;
+    border-image: url("./VOLS.github.io/images/answer_bg.svg") 13;
     border-image-repeat: stretch stretch;
     border-radius: 20px;
-    margin: 20px 12px;
+    margin: 20px 20px 20px 0;
     width: 213px;
     height: 209px;
     text-align: center;
     padding: 10px 0;
     cursor: pointer
+}
+
+.test_page_content .quick-test-question-box .quick-test-item:last-child {
+    margin-right: 0
 }
 
 .test_page_content .quick-test-question-box .quick-test-item span {
@@ -5488,15 +5524,15 @@ header .hamburger {
 }
 
 .test_page_content .quick-test-question-box .quick-test-item.active {
-    -o-border-image: url("images/test/answer_bg_active.svg") 13;
-    border-image: url("images/test/answer_bg_active.svg") 13;
+    -o-border-image: url("./VOLS.github.io/images/answer_bg_active.svg") 13;
+    border-image: url("./VOLS.github.io/images/answer_bg_active.svg") 13;
     border-image-repeat: stretch stretch
 }
 
 .test_page_content .quick-test-question-box .quick-test-item.active .checkbox {
     border: none;
     border-radius: 0;
-    background: center/contain no-repeat url("images/icons.svg#icon-check-circle")
+    background: center/contain no-repeat url("./VOLS.github.io/images/icons.svg#icon-check-circle")
 }
 
 .test_page_content .quick-test-buttons .btn-box:first-child {
@@ -5540,22 +5576,23 @@ header .hamburger {
 
 .result .contact-form-container {
     position: relative;
-    margin-top: 50px
+    margin-top: 62px;
+    margin-bottom: 30px
 }
 
 .result_lvl {
     width: 100%;
     border: 11px solid black;
-    position: relative;
-    -o-border-image: url("images/test/result_border.svg") 13;
-    border-image: url("images/test/result_border.svg") 13;
-    border-image-repeat: stretch stretch
+    -o-border-image: url("./VOLS.github.io/images/result_border.svg") 13;
+    border-image: url("./VOLS.github.io/images/result_border.svg") 13;
+    border-image-repeat: stretch stretch;
+    position: relative
 }
 
 .result_lvl_content {
     background: #fff;
     padding-top: 100px;
-    padding-bottom: 100px
+    padding-bottom: 90px
 }
 
 .result_lvl_content_title {
@@ -5564,8 +5601,8 @@ header .hamburger {
     left: calc(50% - 280px);
     top: -60px;
     border: 11px solid black;
-    -o-border-image: url("images/test/title_border.svg") 13;
-    border-image: url("images/test/title_border.svg") 13;
+    -o-border-image: url("./VOLS.github.io/images/title_border.svg") 13;
+    border-image: url("./VOLS.github.io/images/title_border.svg") 13;
     border-image-repeat: stretch stretch
 }
 
@@ -5669,8 +5706,8 @@ header .hamburger {
     max-width: 563px;
     margin-left: 20px;
     border: 11px solid black;
-    -o-border-image: url("images/test/exam_border.svg") 13;
-    border-image: url("images/test/exam_border.svg") 13;
+    -o-border-image: url("./VOLS.github.io/images/exam_border.svg") 13;
+    border-image: url("./VOLS.github.io/images/exam_border.svg") 13;
     border-image-repeat: stretch stretch
 }
 
@@ -5696,7 +5733,7 @@ header .hamburger {
 
 .result_exams_content .exam_content_course {
     position: relative;
-    background-image: url("images/result/course_title_bg.png");
+    background-image: url("./VOLS.github.io/images/course_title_bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
@@ -5732,6 +5769,10 @@ header .hamburger {
     text-align: center
 }
 
+.result_exams_content .exam_content_subtitle._without-time {
+    margin-bottom: 55px
+}
+
 .result_exams_content .exam_content_time {
     margin-top: 4px;
     font-family: "Rubik", sans-serif;
@@ -5742,13 +5783,17 @@ header .hamburger {
     color: #040D26
 }
 
+.result .test_page_cat {
+    top: -275px
+}
+
 @media only screen and (min-width: 1440px) {
     #progress-bar {
         width: auto !important
     }
 
     .result .contact-form-container .contactUs_question {
-        top: -133px;
+        top: -176px;
         left: 241px;
         -webkit-transform: scale(0.9) rotate(10deg);
         transform: scale(0.84) rotate(10deg)
@@ -5789,11 +5834,11 @@ header .hamburger {
     }
 
     #page-start .main-content .left-block_images img:nth-child(2) {
-        right: 38px
+        right: 15px
     }
 
     #page-start .main-content .left-block_images img:last-child {
-        right: 330px
+        right: 302px
     }
 
     #page-start .main-content .start-test {
@@ -5805,31 +5850,15 @@ header .hamburger {
         display: block;
         position: absolute;
         right: -26px;
-        top: -74px
+        top: -78px
     }
 
-    #page-start .main-content .cards_card:nth-child(1) {
-        background-image: url("images/homeBlock1bgBig.png")
-    }
-
-    #page-start .main-content .cards_card:nth-child(2) {
-        background-image: url("images/homeBlock2bgBig.png")
-    }
-
-    #page-start .main-content .cards_card:nth-child(3) {
-        background-image: url("images/homeBlock3bgBig.png")
-    }
-
-    #page-start .main-content .cards_card:nth-child(4) {
-        background-image: url("images/homeBlock4bgBig.png")
-    }
-
-    #page-start .main-content .cards_card_arrow {
+    #page-start .main-content .cards_card_content_arrow {
         display: block;
         display: block;
         position: absolute;
         right: 30px;
-        top: 53px
+        top: 46px
     }
 
     .test_page .contactUs-container {
@@ -5874,6 +5903,10 @@ header .hamburger {
     .result_exams_content .exam {
         max-width: 448px;
         margin: 0 auto
+    }
+
+    .result .contactUs_form_inputs .input-group_checkbox input:checked + label:after {
+        top: 6px
     }
 }
 
@@ -5925,7 +5958,7 @@ header .hamburger {
     #page-start .main-content .start-test_cat {
         display: block;
         position: absolute;
-        top: -142px;
+        top: -160px;
         right: -42px
     }
 
@@ -5946,7 +5979,7 @@ header .hamburger {
         margin-bottom: 35px
     }
 
-    #page-start .main-content .cards_card_arrow {
+    #page-start .main-content .cards_card_content_arrow {
         display: block;
         display: block;
         position: absolute;
@@ -5958,17 +5991,23 @@ header .hamburger {
         margin: 420px auto 50px auto
     }
 
-    .test_page_content {
-        background-image: url(images/test/test_bg_sm.png);
-        padding: 50px
+    .test_page .contactUs-container .contactUs_question {
+        left: 88px;
+        top: -138px
+    }
+
+    .test_page_content_box {
+        padding: 0 42px 46px 42px
     }
 
     .test_page_content_header {
-        background-image: url(images/test/header_bg_sm.png);
-        width: 90%;
-        padding: 25px 11px 40px 11px;
+        width: 402px;
         top: -71px;
-        left: 5%
+        left: calc(50% - 202px)
+    }
+
+    .test_page_content_header_box {
+        padding: 6px 0
     }
 
     .test_page_content_header h1 {
@@ -5978,7 +6017,7 @@ header .hamburger {
     }
 
     .test_page_content_header .decorative-text {
-        bottom: -17px
+        bottom: -50px
     }
 
     .test_page_content #progress-bar-container {
@@ -5987,12 +6026,11 @@ header .hamburger {
     }
 
     .test_page_content #progress-bar {
-        overflow: hidden;
-        margin-top: 90px
+        overflow: hidden
     }
 
     .test_page_content .quick-test-content {
-        margin: 55px auto 0 auto
+        margin: 0 auto
     }
 
     .test_page_content .quick-test-content .btn-box {
@@ -6035,6 +6073,10 @@ header .hamburger {
         height: 163px
     }
 
+    .test_page_content .quick-test-question-box .quick-test-item span {
+        font-size: 24px
+    }
+
     .test_page_content .quick-test-question-box .quick-test-item:first-child {
         margin-right: 8px
     }
@@ -6063,7 +6105,7 @@ header .hamburger {
     }
 
     .result .contact-form-container {
-        margin-top: 276px
+        margin-top: 293px
     }
 
     .result_lvl_content {
@@ -6133,6 +6175,10 @@ header .hamburger {
 
     .result_exams_content .exam_content_course svg {
         display: none
+    }
+
+    .result .test_page_cat {
+        top: -396px
     }
 }
 

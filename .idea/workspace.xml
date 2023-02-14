@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdc135c9-f786-49fe-b109-8d3e47c93c4f" name="Changes" comment="211113">
+    <list default="true" id="fa2208b8-1671-4511-862c-7b42b9a35567" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fonFormMd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fonFormSm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/form_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/form_header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/form_header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock1bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock1bgBig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock2bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock2bgBig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock3bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock3bgBig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock4bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homeBlock4bgBig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/result/course_title_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/result/exam_border.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/result/result_border.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/result/title_border.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/answer_bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/answer_bg_active.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/header_bg_sm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/test_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/test/test_bg_sm.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.215016a9a082d46730e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.215016a9a082d46730e0.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +42,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2C71ZmjTqOnPKUqsj9K52Hq7fIn" />
+  <component name="ProjectId" id="2LjbSKwMkTChVtdVlELR7eGnofR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,126 +51,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\vlogv\Desktop\vols.github.io\img" />
-      <recent name="C:\Users\vlogv\Desktop\vols.github.io" />
-      <recent name="C:\Users\vlogv\Desktop\vols.github.io\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vlogv\Desktop\New folder (4)\VOLS.github.io" />
-      <recent name="C:\Users\vlogv\Desktop\New folder (4)\VOLS.github.io\VOLS.github.io" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bdc135c9-f786-49fe-b109-8d3e47c93c4f" name="Changes" comment="" />
-      <created>1658138866674</created>
+      <changelist id="fa2208b8-1671-4511-862c-7b42b9a35567" name="Changes" comment="" />
+      <created>1676387437425</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1658138866674</updated>
-      <workItem from="1658138868248" duration="2787000" />
-      <workItem from="1676326219261" duration="66000" />
-      <workItem from="1676326297982" duration="2081000" />
+      <updated>1676387437425</updated>
+      <workItem from="1676387438629" duration="172000" />
     </task>
-    <task id="LOCAL-00001" summary="Test2">
-      <created>1658139011409</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1658139011409</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Test2">
-      <created>1658139292181</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1658139292181</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Test22">
-      <created>1676326371301</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1676326371301</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Test22">
-      <created>1676326730910</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1676326730910</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Test223">
-      <created>1676326779655</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676326779655</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Test223">
-      <created>1676327002103</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1676327002103</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Test2232">
-      <created>1676327059673</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1676327059673</updated>
-    </task>
-    <task id="LOCAL-00008" summary="21111">
-      <created>1676327285351</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1676327285351</updated>
-    </task>
-    <task id="LOCAL-00009" summary="211113">
-      <created>1676328249831</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1676328249831</updated>
-    </task>
-    <task id="LOCAL-00010" summary="211113">
-      <created>1676328457856</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1676328457856</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test2" />
-    <MESSAGE value="Test22" />
-    <MESSAGE value="Test223" />
-    <MESSAGE value="Test2232" />
-    <MESSAGE value="21111" />
-    <MESSAGE value="211113" />
-    <option name="LAST_COMMIT_MESSAGE" value="211113" />
   </component>
 </project>
